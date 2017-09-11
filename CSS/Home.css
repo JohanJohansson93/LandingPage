@@ -86,15 +86,15 @@ The li displays inline and lets the li float to the left.
 nav li {
     display: inline;
     float: left;
+    width: 90px;
 }
 /*
 The a tag gets a color and the element is set to inline-block.
-Width sets to 100px, text-align sets to center with no text-decoration.
+text-align sets to center with no text-decoration.
 Line-height sets to 40px and the text gets a shadow.
 */
 nav a {
     display: inline-block;
-    width: 100px;
     text-align: center;
     text-decoration: none;
     line-height: 40px;
