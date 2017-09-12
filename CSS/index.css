@@ -49,9 +49,9 @@ nav {
     font: 11pt inherit;
     position: fixed;
     top: 0;
-    z-index: 1;
     border-bottom: 2px solid #e5005a;
     padding: 20px;
+    z-index: 101;
 }
 
 a{
@@ -161,6 +161,47 @@ Sets the background-repeat to no-repeat and the background-size to cover.
     background-image: url("../Images/performance.jpg");
     min-height: 400px;
 }
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(51,4,0,.3);
+    z-index: 99;
+}
+.h1Title{
+    text-align: center;
+    top: 25%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    letter-spacing: 5px;
+}
+.OverheadTitle{
+    text-transform: uppercase;
+    color: rgba(255,255,255,.8);
+    line-height: 1.1;
+    font: 57px "Lato", sans-serif;
+    font-weight: 700;
+}
+.OverheadDesc{
+    text-align: center;
+    top: 40%;
+    width: 60%;
+    z-index: 100;
+    margin-left: 20%;
+    position: absolute;
+}
+.OverheadDescP{
+    color: #fff;
+    text-transform: none;
+    font-family: "Adobe Garamond Pro";
+    font-size: 23px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    font-style: italic;
+}
 /*
   Sets the class caption to position absolute. Sets the left attribute to 0.
   Sets the top attribute to be 50% and the width to be 100%.
@@ -169,10 +210,14 @@ Sets the background-repeat to no-repeat and the background-size to cover.
 .caption {
     position: absolute;
     left: 0;
-    top: 50%;
     width: 100%;
     text-align: center;
     color: #000000;
+    top: 50%;
+}
+.top{
+    top: 70%;
+    z-index: 100;
 }
 /*
  Text in the class contentarea gets color grey and sets to be centered.
@@ -458,14 +503,14 @@ input[type=text]:hover, input[type=text]:focus,input[type=text]:active{
 }
 .button {
     background-color: #e5005a;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0,0,0,.1);
     color: #fff;
     display: block;
     margin: 0 auto;
     max-width: 225px;
     min-width: 120px;
-    padding: 25px 5px;
+    padding: 15px 5px;
     position: relative;
     text-align: center;
     text-decoration: none!important;
