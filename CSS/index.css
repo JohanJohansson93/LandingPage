@@ -58,6 +58,10 @@ a{
     color: darkslategray;
     font-weight: 600;
 }
+p{
+    font: 13pt inherit;
+    font-weight: 600;
+}
 .Maintitle{
     float: left;
     margin-left: 100px;
@@ -167,7 +171,7 @@ Sets the background-repeat to no-repeat and the background-size to cover.
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(51,4,0,.3);
+    background-color: rgba(51,4,0,.4);
     z-index: 99;
 }
 .h1Title{
@@ -180,7 +184,7 @@ Sets the background-repeat to no-repeat and the background-size to cover.
 }
 .OverheadTitle{
     text-transform: uppercase;
-    color: rgba(255,255,255,.8);
+    color: rgba(255,255,255,.9);
     line-height: 1.1;
     font: 57px "Lato", sans-serif;
     font-weight: 700;
@@ -229,6 +233,8 @@ Sets the background-repeat to no-repeat and the background-size to cover.
     background-color:white;
     text-align:center;
     padding:50px 80px;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 /*
 The class gallery's text sets to be centered. Margin sets to 0 auto.
@@ -523,4 +529,17 @@ input[type=text]:hover, input[type=text]:focus,input[type=text]:active{
     background-color: white;
     color: #e5005a;
     border: 1px solid #e5005a;
+}
+@media screen and (min-width: 1400px) {
+    .area{
+        padding:60px 90px;
+    }
+    .gallery{
+        text-align: center;
+    }
+    .col{
+        margin-top: 20px;
+        width: 18.999%;
+        margin-left: 5%;
+    }
 }
